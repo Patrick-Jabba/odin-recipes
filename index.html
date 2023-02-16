@@ -7,24 +7,62 @@
     <link rel="stylesheet" href="styles.css">
     <title>Odin Recipes</title>
 
-</head>
-<body>
     <style>
+        .title h1 {
+            background-color: #ddd;
+            margin-top: 32px;
+        }
+        .recipes-menu {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            max-width: 450px;
+            height: 700px;
+            margin: 0 24px;
+            padding: 0 16px;
+            margin-top: 60px;
+            background-color: white;
+            border: 1px solid rgb(82, 82, 226);
+            border-radius: 4px;
+        }
+
+        ul {
+            background-color: white;
+        }
+
+        .recipes-menu, h1, li {
+            margin-top: 8px;
+            letter-spacing: 1px;
+            background-color: white;
+        }
+
         a {
          text-decoration: none;   
          color: #444;
+         background-color: white;
+         
+        }
+
+        a:hover {
+            color: #333;
+            cursor: pointer;
         }
     </style>
-    <div style="display: flex; flex-direction: column; width: 100%; max-width: 900px; align-items: center; justify-content: center;">
+</head>
+<body>
+    <div class="title" style="display: flex; flex-direction: column; width: 100%; max-width: 900px; align-items: center; justify-content: center;">
         <h1>Odin Recipes</h1>
-    <ul>
-        <li>
-            <a href="recipes/lasagna.html">Lasagna</a>
-        </li>
-        <li>
-            <a href="recipes/strogonoff.html">Strogonoff</a>
-        </li>
-    </ul>
+    </div>
+    <div class="recipes-menu">
+        <h1>Recipes Links</h1>
+        <ul>
+            <li>
+                <a href="recipes/lasagna.html">Lasagna</a>
+            </li>
+            <li>
+                <a href="recipes/strogonoff.html">Strogonoff</a>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
