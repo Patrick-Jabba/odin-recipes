@@ -5,3 +5,18 @@
     background-color: #eee;
 }
 
+@media screen {
+    div.divFooter {
+        bottom: 0;
+        position: relative;
+        height: 14rem;
+        margin-top: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fccf86;
+        width: 100%;
+        padding: 0 16px;
+    }
+}
