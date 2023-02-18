@@ -9,22 +9,54 @@
 
     <style>
         .title {
-            margin-top: 54px;
-            
+            display: flex; 
+            width: 100%; max-width: 300px; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 0 16px; 
+            box-shadow: 0px 0px 15px 0px #E3b261; 
+            border-radius: 4px;
         }
         .title h1{
             background-color: #eee;
             color: #E3b261;
         }
+
+        .home-page-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .feast-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            margin-bottom: 2rem;
+            padding: 0;
+
+            width: 70%;
+            margin-top: 3rem;
+            border: none;
+        }
+
+        .feast-image img {
+            width: 1250px;
+            height: 750px;
+            border-radius: 4px;
+            margin: 0;
+            box-shadow: 0px 0px 15px 0px #E3b261; 
+        }
         .recipes-menu {
             display: flex;
             flex-direction: column;
-            width: 50%;
-            max-width: 450px;
-            height: 700px;
-            margin: 0 24px;
-            padding: 0 16px;
-            margin-top: 60px;
+            width: 15%;
+            height: 750px;
+            margin-top: 5rem;
             background-color: white;
             border: 1px solid #E3b261;
             border-radius: 4px;
@@ -55,20 +87,27 @@
     </style>
 </head>
 <body>
-    <div class="title" style="display: flex; width: 100%; max-width: 300px; align-items: center; justify-content: center; padding: 0 16px;">
-        <img src="/assets/images/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg" alt="odin logo">
-        <h1>Odin Recipes</h1>
+    <div class="divNavbar">
+        <div class="title">
+            <img src="/assets/images/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg" alt="odin logo">
+            <h1>Odin Recipes</h1>
+        </div>
     </div>
-    <div class="recipes-menu">
-        <h1 style="box-shadow: 3px 2px 2px 1px #E3b261;">Recipes Links</h1>
-        <ul>
-            <li>
-                <a href="recipes/lasagna.html">Lasagna</a>
-            </li>
-            <li>
-                <a href="recipes/strogonoff.html">Strogonoff</a>
-            </li>
-        </ul>
+    <div class="home-page-content">
+        <div class="recipes-menu">
+            <h1 style="box-shadow: 3px 2px 2px 1px #E3b261;">Recipes Links</h1>
+            <ul>
+                <li>
+                    <a href="recipes/lasagna.html">Lasagna</a>
+                </li>
+                <li>
+                    <a href="recipes/strogonoff.html">Strogonoff</a>
+                </li>
+            </ul>
+        </div>
+        <div class="feast-image">
+            <img src="https://www.syfy.com/sites/syfy/files/2020/10/dd-cookbook-hero.jpg" alt="heroes feast">
+        </div>
     </div>
 
     <div class="divFooter">
